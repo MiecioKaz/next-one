@@ -1,7 +1,9 @@
 const Footer = () => {
   return (
     <footer>
-      <h3>Copyright @Kaz 2022</h3>
+      <div className="flex justify-center">
+        <h3>Copyright @Kaz 2022</h3>
+      </div>
     </footer>
   );
 };
