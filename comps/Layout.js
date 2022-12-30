@@ -3,9 +3,9 @@ import Navbar from "./Navbar";
 
 const Layout = ({ children }) => {
   return (
-    <div className="font-body px-8 bg-gray-100">
+    <div className="flex flex-col min-h-screen font-body bg-gray-100">
       <Navbar />
-      {children}
+      <main className="flex-auto">{children}</main>
       <Footer />
     </div>
   );

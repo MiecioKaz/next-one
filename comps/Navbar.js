@@ -2,33 +2,23 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    // <nav className="bg-slate-50 h-8">
-    //   <h1 className="text-2xl font-bold inline-block absolute top-0 left-0 ml-6">Mietek Site</h1>
-
-    //   <dev className="flex justify-end h-8 items-center text-xl mr-5">
-    //     <Link href="/" className="mr-3">
-    //       Home
-    //     </Link>
-
-    //     <Link href="/login">Login</Link>
-
-    //     <Link href="/signup" className="ml-3">
-    //       Signup
-    //     </Link>
-    //   </dev>
-    // </nav>
-
-    <nav className="flex justify-between">
+    <nav className="sticky top-0 flex justify-between bg-red-50 h-12 items-center border-solid border-2">
       <div>
-        <h1>Mietek Site</h1>
+        <h1 className="text-3xl font-bold ml-5">Mietek Site</h1>
       </div>
 
-      <dev>
-        <Link href="/">Home</Link>
+      <dev className="text-xl">
+        <Link href="/" className="hover:text-red-600">
+          Home
+        </Link>
 
-        <Link href="/login">Login</Link>
+        <Link href="/login" className="hover:text-red-600 mx-4">
+          Login
+        </Link>
 
-        <Link href="/signup">Signup</Link>
+        <Link href="/signup" className="hover:text-red-600 mr-5">
+          Signup
+        </Link>
       </dev>
     </nav>
   );

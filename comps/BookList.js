@@ -7,14 +7,16 @@ export default function BookList({ books }) {
   };
 
   return (
-    <div>
-      <ul>
+    <div className="border-solid border-2 w-9/12 p-5">
+      <h2 className="text-2xl font-bold ml-5">Book title</h2>
+
+      <ol className="list-decimal list-inside">
         {books.map((book) => (
-          <li key={book.id} onClick={() => handleClick(book.id)}>
+          <li className=" text-xl hover:text-red-600 m-5" key={book.id} onClick={() => handleClick(book.id)}>
             {book.title}
           </li>
         ))}
-      </ul>
+      </ol>
     </div>
   );
 }

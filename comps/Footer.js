@@ -1,10 +1,8 @@
 const Footer = () => {
   return (
-    <footer>
-      <div className="flex justify-center">
-        <h3>Copyright @Kaz 2022</h3>
-      </div>
-    </footer>
+    <div className="sticky bottom-0 flex justify-center bg-red-50 h-8 border-solid border-2">
+      <h3>Copyright @Kaz 2022</h3>
+    </div>
   );
 };
 
