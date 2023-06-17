@@ -3,12 +3,12 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_API_KEY,
+  apiKey: "AIzaSyDYtXjjoP9GH-j8KFzes2T7UyUQ0_UjkP4",
   authDomain: "myreadinglist-57133.firebaseapp.com",
   projectId: "myreadinglist-57133",
   storageBucket: "myreadinglist-57133.appspot.com",
   messagingSenderId: "944098897060",
-  appId: process.env.NEXT_PUBLIC_APP_ID,
+  appId: "1:944098897060:web:5414e083a8d0dcc2ca4a31",
 };
 
 const app = initializeApp(firebaseConfig);
